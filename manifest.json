@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "Spoiler Score Hider",
+    "description": "Hides the score spoiling the result of a game when watching highlights.",
+    "version": "0.2",
+    "content_scripts": [
+        {
+            "matches": ["https://*/*"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
